@@ -8,15 +8,8 @@ internal class Dog : Animal
 		this.isDangerous = isDangerous;
 	}
 
-	public void MakeNoise()
+	public override string GetNoise()
 	{
-		if (isAlive)
-		{
-			Console.WriteLine($"{name} hav dedi");
-		}
-		else
-		{
-			Console.WriteLine($"{name} sesi çıkmıyor.");
-		}
+		return "havladı!";
 	}
 }

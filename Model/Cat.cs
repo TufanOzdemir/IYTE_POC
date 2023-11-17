@@ -8,15 +8,8 @@ internal class Cat : Animal
 		CatCount++;
 	}
 
-	public void MakeNoise()
+	public override string GetNoise()
 	{
-		if (isAlive)
-		{
-			Console.WriteLine($"{name} miyav dedi");
-		}
-		else
-		{
-			Console.WriteLine($"{name} sesi çıkmıyor.");
-		}
+		return "miyavladı!";
 	}
 }
